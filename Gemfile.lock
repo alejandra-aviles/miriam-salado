@@ -20,6 +20,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    dotenv (0.7.0)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -63,6 +64,9 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
+    middleman-dotenv (0.0.2)
+      dotenv (~> 0.7.0)
+      middleman-core (~> 3.0)
     middleman-livereload (3.1.0)
       em-websocket (>= 0.2.0)
       middleman-core (>= 3.0.2)
@@ -118,6 +122,7 @@ PLATFORMS
 DEPENDENCIES
   middleman
   middleman-deploy
+  middleman-dotenv
   middleman-livereload
   pry
   royalslider-assets!

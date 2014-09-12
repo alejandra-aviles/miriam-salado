@@ -56,6 +56,16 @@ set :images_dir, 'images'
 activate :livereload
 activate :directory_indexes
 
+configure :development do
+  activate :dotenv, env: '.env.development'
+end
+
+configure :build do
+  activate :dotenv, env: '.env.build'
+end
+
+set :basepath, ENV['BASEPATH']
+
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :git
@@ -78,8 +88,8 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
-  # set :relative_links, true
+  activate :relative_assets
+  set :relative_links, true
 
   # Compress PNGs after build
   # First: gem install middleman-smusher

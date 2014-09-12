@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <base href="<%= basepath %>" />
+
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
       <meta charset="utf-8">
       <!-- Always force latest IE rendering engine or request Chrome Frame -->
@@ -10,17 +12,17 @@
       <title><%= data.page.title || "miriam salado" %></title>  
       <script type="text/javascript" src="//use.typekit.net/tnp4ijk.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-      <%= stylesheet_link_tag "screen" %>
+      <link href="stylesheets/screen.css" rel="stylesheet" type="text/css">
   </head>
 
   <body class="<%= page_classes %>">
       <div class="nav-bar">
-        <a href="/" class="logo"> miriam salado </a>
+        <a href="" class="logo"> miriam salado </a>
         <ul class="nav">
-           <li><a href="/">obra</a></li>
-           <li><a href="/pdf/dossier_miriam_salado.pdf" target="d">dossier.pdf</a></li>
-           <li><a href="/info">info</a></li>
-           <li><a href="/contacto">contacto</a></li>
+           <li><a href="">obra</a></li>
+           <li><a href="pdf/dossier_miriam_salado.pdf" target="d">dossier.pdf</a></li>
+           <li><a href="info">info</a></li>
+           <li><a href="contacto">contacto</a></li>
         </ul>
       </div>
 
@@ -34,7 +36,7 @@
       </div>
 
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-      <%= javascript_include_tag  "application" %>
+      <script src="javascripts/application.js" type="text/javascript"></script>
 
   </body>
 </html>
