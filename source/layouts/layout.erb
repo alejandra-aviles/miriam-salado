@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <!-- Always force latest IE rendering engine or request Chrome Frame -->
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+      <!-- Use title if it's in the page YAML frontmatter -->
+      
+      <title><%= data.page.title || "miriam salado" %></title>  
+      <script type="text/javascript" src="//use.typekit.net/tnp4ijk.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+      <%= stylesheet_link_tag "screen" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+      <div class="nav-bar">
+        <a href="/" class="logo"> miriam salado </a>
+        <ul class="nav">
+           <li><a href="/">obra</a></li>
+           <li><a href="/pdf/dossier_miriam_salado.pdf" target="d">dossier.pdf</a></li>
+           <li><a href="/info">info</a></li>
+           <li><a href="/contacto">contacto</a></li>
+        </ul>
+      </div>
+
+      <%= yield_content :fullpage %>
+      <div id="main" class="container push-right push-right-main">
+        <%= yield %>
+
+        <div class="footer">
+          <a target="Alecamp." href="http://alecamp.mx/">Alecamp.</a>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+      <%= javascript_include_tag  "application" %>
+
+  </body>
+</html>

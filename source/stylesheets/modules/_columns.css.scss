@@ -1,0 +1,14 @@
+.columns {
+	@include group;
+	.column {
+		float:left;
+		padding-top: 20px;
+	}
+
+	.column-medios {
+		width:50%;
+		padding-right:2%;
+	}
+
+
+}
