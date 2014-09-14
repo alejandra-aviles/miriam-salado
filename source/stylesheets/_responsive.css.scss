@@ -2,23 +2,25 @@
 	width:100%;
 }
 
+.nav-bar {
+	font-size:1em;
+}
+h3 {
+	font-size:0.6em;
+}
+.container {
+	width: 740px;
+}
+.img-portrait {
+	height: 400px;
+}
+.img-botes {
+	width: 181px;
+}		
+
+
 @media only screen and (min-width: 480px) {
 	// body{background: red;}
-	.nav-bar {
-		font-size:1em;
-	}
-	h3 {
-		font-size:0.6em;
-	}
-	.container {
-		width: 740px;
-	}
-	.img-portrait {
-		height: 400px;
-	}
-	.img-botes {
-		width: 181px;
-	}		
 }
 @media only screen and (min-width: 600px) {
 	// body{background: blue;}
