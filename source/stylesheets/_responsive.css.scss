@@ -4,6 +4,21 @@
 
 @media only screen and (min-width: 480px) {
 	// body{background: red;}
+	.nav-bar {
+		font-size:1em;
+	}
+	h3 {
+		font-size:0.6em;
+	}
+	.container {
+		width: 740px;
+	}
+	.img-portrait {
+		height: 400px;
+	}
+	.img-botes {
+		width: 181px;
+	}		
 }
 @media only screen and (min-width: 600px) {
 	// body{background: blue;}
@@ -20,7 +35,7 @@
 		width: 740px;
 	}
 	.img-portrait {
-		height: 600px;
+		height: 400px;
 	}
 	.img-botes {
 		width: 181px;
@@ -36,7 +51,7 @@
 		padding-bottom:20px;
 	}
 	.img-portrait {
-		height: 1200px;
+		height: 550px;
 	}
 	.columns .column-medios{
 		width:100%;
@@ -49,7 +64,7 @@
 		width: 1000px;
 	}
 	.img-portrait {
-		height: 800px;
+		height: 600px;
 	}
 	.img-botes {
 		width: 246px;

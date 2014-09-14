@@ -56,16 +56,6 @@ set :images_dir, 'images'
 activate :livereload
 activate :directory_indexes
 
-configure :development do
-  activate :dotenv, env: '.env.development'
-end
-
-configure :build do
-  activate :dotenv, env: '.env.build'
-end
-
-set :basepath, ENV['BASEPATH']
-
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :git
@@ -74,6 +64,7 @@ activate :deploy do |deploy|
   # deploy.branch = "custom-branch" # default: gh-pages
 end
 
+set :basepath, ENV['BASEPATH'] || "/"
 
 # Build-specific configuration
 configure :build do
