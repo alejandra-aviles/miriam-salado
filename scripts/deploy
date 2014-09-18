@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-BASEPATH=/miriam-salado/ bundle exec middleman deploy
+BASEPATH=/ bundle exec middleman deploy
