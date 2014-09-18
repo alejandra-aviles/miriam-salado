@@ -84,6 +84,11 @@
 
 .audiojs .play-pause p {
   background: none;
+  font-size: 1em;
+}
+
+.audiojs .play {
+  font-size: 1em;
 }
 
 .audiojs .play-pause p:after {
@@ -93,22 +98,22 @@
 
 .audiojs .play:after {
   content: '\f04b';
-  margin: 5px 9px;
+  margin: 8px 10px;
 }
 
 .audiojs .pause:after {
   content: '\f04c';
-  margin: 5px 9px;
+  margin: 8px 10px;
 }
 
 .audiojs .loading:after {
   content: '\f01e';
-  margin: 5px 9px;
+  margin: 8px 10px;
 }
 
 .audiojs .error:after {
   content: '\f119';
-  margin: 5px 9px;
+  margin: 8px 10px;
 }
 
 
